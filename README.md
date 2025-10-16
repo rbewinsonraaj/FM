@@ -66,50 +66,34 @@ MODEL GRAPH:
 
 Program
 
-Am=5.9;
-
-Ac=11.8;
-
-fm=517;
-
-fc=5170;
-
-fs=51700;
-
-t=0:1/fs:2/fm;
-
-m=Am*cos(2*3.14*fm*t);
-
+Am=7.4;
+Fm=667;
+Fs=66700;
+t=0:1/Fs:2/Fm;
+m1=Am*cos(2*3.14*Fm*t);
 subplot(3,1,1);
-
-plot(t,m);
-
-c=Ac*cos(2*3.14*fc*t);
-
+plot(t,m1);
+Ac=14.8;
+Fc=6670;
+c1=Ac*cos(2*3.14*Fc*t);
 subplot(3,1,2);
-
-plot(t,c);
-
-B=4.65;
-
-efm=Ac*cos((2*3.14*fc*t)+(B*sin(2*3.14*fm*t)));
-
+plot(t,c1);
+Bt=6.15;
+FM=Ac*cos((2*3.14*Fc*t)+(Bt*sin(2*3.14*Fm*t)));
 subplot(3,1,3);
-
-plot(t,efm);
+plot(t,FM);
 
 
 
 Output Waveform
-<img width="1553" height="966" alt="image" src="https://github.com/user-attachments/assets/bae1313e-7797-4eda-b6e8-c86b3267760d" />
+<img width="1567" height="966" alt="image" src="https://github.com/user-attachments/assets/55a34c1c-a539-4c4b-9399-a26602ef178e" />
+
 
 
 
 
 Tabulation
-
-![WhatsApp Image 2025-09-24 at 22 17 20_512d667b](https://github.com/user-attachments/assets/f6ee1aec-051c-4055-a7b6-e31fad2b9892)
-![WhatsApp Image 2025-09-24 at 22 18 18_70dba006](https://github.com/user-attachments/assets/eb4cda86-c1cf-4bfc-b138-6f3b233dbf90)
+<img width="1600" height="1265" alt="image" src="https://github.com/user-attachments/assets/96349477-8404-4718-b790-390cf1049647" />
 
 
 
@@ -118,11 +102,11 @@ Calculation
 
 
 
-Frequency Deviation Practical = 3070.18
+Frequency Deviation Practical = 4444.44
 
-Modulation Index Practical	= 5.986
+Modulation Index Practical	= 0.6666656
 
-Modulation Index Theoretical	= 4.65
+Modulation Index Theoretical	= 333.33
 
 
 
